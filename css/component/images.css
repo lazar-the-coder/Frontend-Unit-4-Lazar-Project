@@ -1,0 +1,25 @@
+/* line 3, ../Frontend/Frontend-Unit-4-Lazar-Project/Frontend-Unit-4-Lazar-Project/scss/component/images.scss */
+.img-avatar, .img-frame, .img-logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 6, ../Frontend/Frontend-Unit-4-Lazar-Project/Frontend-Unit-4-Lazar-Project/scss/component/images.scss */
+.img-avatar, .img-frame {
+  margin-top: 10px;
+  max-width: 100%;
+}
+
+/* line 16, ../Frontend/Frontend-Unit-4-Lazar-Project/Frontend-Unit-4-Lazar-Project/scss/component/images.scss */
+.img-avatar {
+  max-height: 100%;
+}
+
+/* line 21, ../Frontend/Frontend-Unit-4-Lazar-Project/Frontend-Unit-4-Lazar-Project/scss/component/images.scss */
+.img-frame {
+  padding: 13px;
+  border: 1px solid #ccc;
+}
+
+/*# sourceMappingURL=images.css.map */

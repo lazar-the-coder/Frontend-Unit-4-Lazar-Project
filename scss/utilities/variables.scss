@@ -1,0 +1,27 @@
+$white: #fff;
+$text-color: #777;
+$primary-color: #58e1c1;
+$secondary-color: #51ddfc;
+$base-color: (
+    'default': $secondary-color,
+    'error': #e4757a,
+    'info': #927bc1,
+    'success': #63cc82,
+    'warning': #fd7856,
+);
+$back-color: (
+    map-get($base-color, 'info'),
+    map-get($base-color, 'warning'),
+    #deb2ee,
+    #7ee6fd,
+    #88d9a0,
+    #4da2bb,
+    #ec9fa3,
+    #fd9f85,
+    map-get($base-color, 'error'),
+    map-get($base-color, 'success'),
+    map-get($base-color, 'default'),
+    #80e8d1
+);
+$space: 10px;
+$breakpoint: 768px;

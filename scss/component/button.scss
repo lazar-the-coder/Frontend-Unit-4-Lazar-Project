@@ -1,0 +1,22 @@
+@import '../utilities/index';
+
+.btn {
+  @include spacer;
+  margin-top: 15px;
+  color: $white;
+  border: none;
+  text-transform: uppercase;
+  @media (min-width: $breakpoint) {
+    padding: $space 30px;
+    @include match-space;
+  }
+}
+
+@each $color, $value in $base-color {
+  .#{$color} {
+    background-color: $value;
+    &:hover {
+      background-color: lighten($value, 15%);
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "variables.css",
+	"sources": [
+		"../../scss/utilities/variables.scss"
+	],
+	"sourcesContent": [
+		"$white: #fff;\r\n$text-color: #777;\r\n$primary-color: #58e1c1;\r\n$secondary-color: #51ddfc;\r\n$base-color: (\r\n    'default': $secondary-color,\r\n    'error': #e4757a,\r\n    'info': #927bc1,\r\n    'success': #63cc82,\r\n    'warning': #fd7856,\r\n);\r\n$back-color: (\r\n    map-get($base-color, 'info'),\r\n    map-get($base-color, 'warning'),\r\n    #deb2ee,\r\n    #7ee6fd,\r\n    #88d9a0,\r\n    #4da2bb,\r\n    #ec9fa3,\r\n    #fd9f85,\r\n    map-get($base-color, 'error'),\r\n    map-get($base-color, 'success'),\r\n    map-get($base-color, 'default'),\r\n    #80e8d1\r\n);\r\n$space: 10px;\r\n$breakpoint: 768px;"
+	],
+	"names": [],
+	"mappings": ""
+}

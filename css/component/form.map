@@ -1,0 +1,18 @@
+{
+	"version": 3,
+	"file": "form.css",
+	"sources": [
+		"../../scss/component/form.scss",
+		"../../scss/utilities/_index.scss",
+		"../../scss/utilities/mixins.scss",
+		"../../scss/utilities/variables.scss"
+	],
+	"sourcesContent": [
+		"@import '../utilities/index';\r\n\r\n.form {\r\n  flex-basis: 100%;\r\n}\r\n  \r\n.input{\r\n  display: block;\r\n  width: 94%;\r\n  margin: $space auto 0;\r\n  border: none;\r\n  padding: $space;\r\n  border-bottom: 5px solid $primary-color;\r\n}\r\n  \r\n.hidden {\r\n  position:absolute;\r\n  left:-10000px;\r\n  top:auto;\r\n  width:1px;\r\n  height:1px;\r\n  overflow:hidden;\r\n}",
+		"@import 'mixins', 'variables';",
+		"@import 'variables';\r\n\r\n@mixin blocker {\r\n  display: block;\r\n  margin-left: auto;\r\n  margin-right: auto;\r\n}\r\n@mixin spacer {\r\n  width: 100%;\r\n  padding: $space 0;\r\n  border-radius: 5px;\r\n}\r\n@mixin match-space {\r\n  & + & {\r\n    margin-left: $space;\r\n  }\r\n}",
+		"$white: #fff;\r\n$text-color: #777;\r\n$primary-color: #58e1c1;\r\n$secondary-color: #51ddfc;\r\n$base-color: (\r\n    'default': $secondary-color,\r\n    'error': #e4757a,\r\n    'info': #927bc1,\r\n    'success': #63cc82,\r\n    'warning': #fd7856,\r\n);\r\n$back-color: (\r\n    map-get($base-color, 'info'),\r\n    map-get($base-color, 'warning'),\r\n    #deb2ee,\r\n    #7ee6fd,\r\n    #88d9a0,\r\n    #4da2bb,\r\n    #ec9fa3,\r\n    #fd9f85,\r\n    map-get($base-color, 'error'),\r\n    map-get($base-color, 'success'),\r\n    map-get($base-color, 'default'),\r\n    #80e8d1\r\n);\r\n$space: 10px;\r\n$breakpoint: 768px;"
+	],
+	"names": [],
+	"mappings": ";AAEA,AAAA,KAAK,CAAC;EACJ,UAAU,EAAE,IAAI;CACjB;;;AAED,AAAA,MAAM,CAAA;EACJ,OAAO,EAAE,KAAK;EACd,KAAK,EAAE,GAAG;EACV,MAAM,EGgBA,IAAI,CHhBK,IAAI,CAAC,CAAC;EACrB,MAAM,EAAE,IAAI;EACZ,OAAO,EGcD,IAAI;EHbV,aAAa,EAAE,GAAG,CAAC,KAAK,CGVV,OAAO;CHWtB;;;AAED,AAAA,OAAO,CAAC;EACN,QAAQ,EAAC,QAAQ;EACjB,IAAI,EAAC,QAAQ;EACb,GAAG,EAAC,IAAI;EACR,KAAK,EAAC,GAAG;EACT,MAAM,EAAC,GAAG;EACV,QAAQ,EAAC,MAAM;CAChB"
+}

@@ -1,0 +1,18 @@
+{
+	"version": 3,
+	"file": "navigation.css",
+	"sources": [
+		"../../scss/component/navigation.scss",
+		"../../scss/utilities/_index.scss",
+		"../../scss/utilities/mixins.scss",
+		"../../scss/utilities/variables.scss"
+	],
+	"sourcesContent": [
+		"@import '../utilities/index';\r\n\r\n.nav {\r\n  padding-left: 0;\r\n  flex-basis: 100%;\r\n  display: flex;\r\n  flex-direction: column;\r\n  @media (min-width: $breakpoint) {\r\n    flex-direction: row;\r\n    justify-content: flex-end;\r\n    align-items: center;\r\n  }\r\n}\r\n  \r\n.nav-link {\r\n  @include spacer;\r\n  text-align: center;\r\n  display: block;\r\n  transition: \r\n    background-color .2s ease-in-out, \r\n    color .2s ease-in-out;\r\n  @media (min-width: $breakpoint) {\r\n    flex-basis: 100px;\r\n  }\r\n  &:hover {\r\n    color: $white;\r\n    background-color: $primary-color;\r\n  }\r\n}",
+		"@import 'mixins', 'variables';",
+		"@import 'variables';\r\n\r\n@mixin blocker {\r\n  display: block;\r\n  margin-left: auto;\r\n  margin-right: auto;\r\n}\r\n@mixin spacer {\r\n  width: 100%;\r\n  padding: $space 0;\r\n  border-radius: 5px;\r\n}\r\n@mixin match-space {\r\n  & + & {\r\n    margin-left: $space;\r\n  }\r\n}",
+		"$white: #fff;\r\n$text-color: #777;\r\n$primary-color: #58e1c1;\r\n$secondary-color: #51ddfc;\r\n$base-color: (\r\n    'default': $secondary-color,\r\n    'error': #e4757a,\r\n    'info': #927bc1,\r\n    'success': #63cc82,\r\n    'warning': #fd7856,\r\n);\r\n$back-color: (\r\n    map-get($base-color, 'info'),\r\n    map-get($base-color, 'warning'),\r\n    #deb2ee,\r\n    #7ee6fd,\r\n    #88d9a0,\r\n    #4da2bb,\r\n    #ec9fa3,\r\n    #fd9f85,\r\n    map-get($base-color, 'error'),\r\n    map-get($base-color, 'success'),\r\n    map-get($base-color, 'default'),\r\n    #80e8d1\r\n);\r\n$space: 10px;\r\n$breakpoint: 768px;"
+	],
+	"names": [],
+	"mappings": ";AAEA,AAAA,IAAI,CAAC;EACH,YAAY,EAAE,CAAC;EACf,UAAU,EAAE,IAAI;EAChB,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM;CAMvB;;AALC,MAAM,EAAE,SAAS,EAAE,KAAK;;EAL1B,AAAA,IAAI,CAAC;IAMD,cAAc,EAAE,GAAG;IACnB,eAAe,EAAE,QAAQ;IACzB,WAAW,EAAE,MAAM;GAEtB;;;;AAED,AAAA,SAAS,CAAC;EENR,KAAK,EAAE,IAAI;EACX,OAAO,ECgBD,IAAI,CDhBM,CAAC;EACjB,aAAa,EAAE,GAAG;EFMlB,UAAU,EAAE,MAAM;EAClB,OAAO,EAAE,KAAK;EACd,UAAU,EACR,yDACqB;CAQxB;;AAPC,MAAM,EAAE,SAAS,EAAE,KAAK;;EAP1B,AAAA,SAAS,CAAC;IAQN,UAAU,EAAE,KAAK;GAMpB;;;;AAdD,AAUE,SAVO,AAUN,MAAM,CAAC;EACN,KAAK,EGzBD,IAAI;EH0BR,gBAAgB,EGxBJ,OAAO;CHyBpB"
+}

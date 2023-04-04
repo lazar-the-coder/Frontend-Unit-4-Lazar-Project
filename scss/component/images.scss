@@ -1,0 +1,25 @@
+@import '../utilities/index';
+
+%img {
+  @include blocker;
+}
+%img-more {
+  @extend %img;
+  margin-top: $space;
+  max-width: 100%; 
+}
+
+.img-logo {
+  @extend %img;
+}
+
+.img-avatar {
+  @extend %img-more;
+  max-height: 100%;
+}
+
+.img-frame {
+  @extend %img-more;
+  padding: 13px;
+  border: 1px solid #ccc;
+}

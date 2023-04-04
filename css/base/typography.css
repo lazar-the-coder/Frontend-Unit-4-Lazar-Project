@@ -1,0 +1,47 @@
+/* line 3, ../Frontend/Frontend-Unit-4-Lazar-Project/Frontend-Unit-4-Lazar-Project/scss/base/typography.scss */
+* {
+  font-family: 'Lato', sans-serif;
+  color: #777;
+  box-sizing: border-box;
+}
+
+/* line 9, ../Frontend/Frontend-Unit-4-Lazar-Project/Frontend-Unit-4-Lazar-Project/scss/base/typography.scss */
+p {
+  line-height: 1.45em;
+}
+
+/* line 13, ../Frontend/Frontend-Unit-4-Lazar-Project/Frontend-Unit-4-Lazar-Project/scss/base/typography.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 17, ../Frontend/Frontend-Unit-4-Lazar-Project/Frontend-Unit-4-Lazar-Project/scss/base/typography.scss */
+.headline-primary {
+  color: #58e1c1;
+  margin-left: 10px;
+}
+
+/* line 22, ../Frontend/Frontend-Unit-4-Lazar-Project/Frontend-Unit-4-Lazar-Project/scss/base/typography.scss */
+.headline-secondary {
+  font-weight: 300;
+  color: #777;
+}
+
+/* line 27, ../Frontend/Frontend-Unit-4-Lazar-Project/Frontend-Unit-4-Lazar-Project/scss/base/typography.scss */
+.link {
+  color: #51ddfc;
+  font-weight: 700;
+}
+
+/* line 32, ../Frontend/Frontend-Unit-4-Lazar-Project/Frontend-Unit-4-Lazar-Project/scss/base/typography.scss */
+.blockquote {
+  font-size: 1.5em;
+  font-weight: 300;
+  font-style: italic;
+  margin-left: 20px;
+  padding-left: 20px;
+  border-left: 8px solid #58e1c1;
+  border-radius: 5px;
+}
+
+/*# sourceMappingURL=typography.css.map */

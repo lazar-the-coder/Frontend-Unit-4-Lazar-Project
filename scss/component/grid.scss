@@ -1,0 +1,54 @@
+@import '../utilities/index';
+
+.container {
+  padding: 0 $space;
+  @media (min-width: $breakpoint) {
+    max-width: 1400px;
+    @include blocker;
+  }
+}
+
+.centered {
+  @media (min-width: $breakpoint) {
+    @include blocker;
+  }
+}
+  
+.row {
+  display: flex;
+  flex-direction: column;
+  padding: 1em $space;
+  @media (min-width: $breakpoint) {
+    flex-direction: row;
+  }
+}
+
+[class^=col] {
+  margin-top: $space;
+  flex-basis: 100%;
+  min-height: 25px;
+  padding: $space;
+  border-radius: 5px;
+  @media (min-width: $breakpoint) {
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    align-items: center;
+    @include match-space;
+  }
+}
+
+.card {
+  flex-basis: 100%;
+}
+
+@for $i from 1 through 12 {
+  .theme.col-#{$i} {
+    background-color: nth($back-color, $i);
+  }
+  @media (min-width: $breakpoint) {
+    .col-#{$i} {
+      flex-basis: $i * (100/12) * 1%;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+@import 'variables';
+
+@mixin blocker {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+@mixin spacer {
+  width: 100%;
+  padding: $space 0;
+  border-radius: 5px;
+}
+@mixin match-space {
+  & + & {
+    margin-left: $space;
+  }
+}
